@@ -5,9 +5,8 @@ public abstract class User{ // This superclass is gonna be extended to Customer,
     protected String name;
     protected String email;
     protected String contactInfo;
-
     public User(){}
-
+    //test
     public User(int userID, String username, String password, String name, String email, String contactInfo){
         this.userID = userID;
         this.username = username;
