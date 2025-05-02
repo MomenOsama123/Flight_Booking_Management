@@ -1,6 +1,7 @@
+import java.util.Scanner; 
 public class Main {
     public static void main(String[] args) {
-
+        Scanner input=new Scanner(System.in);
         Agent a1 = new Agent(1, "agent007", "TopSecret1", "James Bond",
                         "jbond@mi6.co.uk", "+44...", "Intelligence", 0.15);
 
@@ -13,11 +14,17 @@ public class Main {
 
         Customer c2 = new Customer(2,"Dezllar","0123","Youssef Elgamel","youssefelgamel12@gmail.com","01271446218",
                     "Alexandria","BKG12","2 seats"); // Error in password
-
+       // Customer c3=new Customer(3,"Mo'","mo123","Mo'men Osama","omomen519@gmail.com","01020931722","Alexandria","BKG111","1 seat");
         String path = "users.csv";
         a1.saveToCsv(path);
         c1.saveToCsv(path);
         adm1.saveToCsv(path);
     }
+    //Now,it's UI time
+    // do{
+    //     System.out.println("Welcome to our Flight Booking Management System");
+    //     int choise ; 
+    //     switch choise:
+    // }
 }
 
